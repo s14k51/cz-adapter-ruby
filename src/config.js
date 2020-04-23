@@ -9,11 +9,10 @@ const widths = configureWidths();
 const options = {
   ...widths,
   defaultType: 'feat',
-  defaultScope: '',
-  defaultSubject: '',
-  defaultBody: '',
-  defaultIssues: '',
-  disableScopeLowerCase: true,
+  defaultScope: undefined,
+  defaultSubject: undefined,
+  defaultBody: undefined,
+  defaultIssues: undefined,
 };
 
 const length = longest(conventionalRubyTypes).length + 1;
