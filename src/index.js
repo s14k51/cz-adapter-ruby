@@ -40,9 +40,7 @@ const adapter = {
           'What is the scope of this change (e.g. component or file name): (press enter to skip)',
         default: options.defaultScope,
         filter(value) {
-          return options.disableScopeLowerCase
-            ? value.trim()
-            : value.trim().toLowerCase();
+          return value.trim().toLowerCase();
         },
       },
       {

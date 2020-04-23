@@ -1,7 +1,7 @@
 {
   "name": "cz-adapter-ruby",
   "description": "Customized fork of cz-conventional-changelog",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "src/index.js",
   "files": [
