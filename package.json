@@ -1,0 +1,44 @@
+{
+  "name": "cz-adapter-ruby",
+  "description": "Customized fork of cz-conventional-changelog",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "author": "s14k51 <s14k51@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/s14k51/cz-adapter-ruby"
+  },
+  "homepage": "https://github.com/s14k51/cz-adapter-ruby",
+  "bugs": {
+    "url": "https://github.com/s14k51/cz-adapter-ruby/issues"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "rimraf coverage",
+    "test": "jest"
+  },
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "conventional-ruby-commit-types": "^1.1.0",
+    "longest": "^2.0.1",
+    "word-wrap": "^1.2.3"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@types/jest": "^25.1.4",
+    "commitlint-config-ruby": "^2.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-ruby": "^1.7.2",
+    "husky": "^4.2.3",
+    "jest": "^25.2.4",
+    "jest-preset-ruby": "^1.0.0",
+    "rimraf": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=10.16.3"
+  }
+}
