@@ -28,15 +28,15 @@
     "word-wrap": "^1.2.3"
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.3.5",
-    "@types/jest": "^25.1.4",
-    "commitlint-config-ruby": "^2.2.0",
-    "eslint": "^6.8.0",
-    "eslint-config-ruby": "^1.7.2",
-    "husky": "^4.2.3",
-    "jest": "^25.2.4",
-    "jest-preset-ruby": "^1.0.0",
-    "rimraf": "^3.0.2"
+    "@commitlint/cli": "8.3.5",
+    "@types/jest": "25.2.1",
+    "commitlint-config-ruby": "2.2.0",
+    "eslint": "6.8.0",
+    "eslint-config-ruby": "1.7.2",
+    "husky": "4.2.5",
+    "jest": "25.4.0",
+    "jest-preset-ruby": "1.0.0",
+    "rimraf": "3.0.2"
   },
   "engines": {
     "node": ">=10.16.3"
