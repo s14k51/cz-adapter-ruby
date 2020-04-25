@@ -82,18 +82,9 @@ const adapter = {
         default: options.defaultBody,
       },
       {
-        type: 'confirm',
-        name: 'isBreaking',
-        message: 'Are there any breaking changes?',
-        default: false,
-      },
-      {
         type: 'input',
         name: 'breaking',
-        message: 'Describe the breaking changes:\n',
-        when(answers) {
-          return answers.isBreaking;
-        },
+        message: "Describe 'BREAKING CHANGES' if any: (press enter to skip)\n",
         transformer(breaking) {
           return `${chalk.yellow('BREAKING CHANGE:')} ${breaking}`;
         },
