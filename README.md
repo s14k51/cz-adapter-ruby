@@ -1,4 +1,5 @@
 [![npm package](https://img.shields.io/npm/v/cz-adapter-ruby?label=npm%20package)](https://www.npmjs.com/package/cz-adapter-ruby)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
 [![Renovatebot](https://img.shields.io/badge/Renovate-enabled-success)](https://renovateapp.com/)
 [![Known Vulnerabilities](https://snyk.io/test/github/s14k51/cz-adapter-ruby/badge.svg?targetFile=package.json)](https://snyk.io/test/github/s14k51/cz-adapter-ruby?targetFile=package.json)
@@ -23,4 +24,8 @@ npm i -g commitizen cz-adapter-ruby
 
 ```bash
 echo '{ "path": "cz-adapter-ruby" }' > ~/.czrc
+```
+
+```bash
+git cz
 ```
