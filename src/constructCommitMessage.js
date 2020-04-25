@@ -12,8 +12,7 @@ function constructHeader(answers) {
 
 function constructBody(answers, wrapOptions) {
   // Wrap these lines at options.maxLineWidth characters
-  const body = answers.body || answers.breakingBody || answers.issuesBody;
-  return body ? wrap(body, wrapOptions) : false;
+  return answers.body ? wrap(answers.body, wrapOptions) : false;
 }
 
 function constructBreaking(answers, wrapOptions) {
@@ -24,8 +23,7 @@ function constructBreaking(answers, wrapOptions) {
 }
 
 function constructIssues(answers, wrapOptions) {
-  const { issues } = answers;
-  return issues ? wrap(issues, wrapOptions) : false;
+  return answers.issues ? wrap(answers.issues, wrapOptions) : false;
 }
 
 module.exports = function constructCommitMessage(answers, options) {

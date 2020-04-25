@@ -89,19 +89,6 @@ const adapter = {
       },
       {
         type: 'input',
-        name: 'breakingBody',
-        message: 'A BREAKING CHANGE commit requires a body. Please enter a longer description of the commit itself:\n',
-        default: '-',
-        when(answers) {
-          return answers.isBreaking && !answers.body;
-        },
-        validate(breakingBody) {
-          const breakingBodyLength = breakingBody.trim().length;
-          return breakingBodyLength > 0 || 'Body is required for BREAKING CHANGE';
-        },
-      },
-      {
-        type: 'input',
         name: 'breaking',
         message: 'Describe the breaking changes:\n',
         when(answers) {
@@ -116,15 +103,6 @@ const adapter = {
         name: 'isIssueAffected',
         message: 'Does this change affect any open issues?',
         default: !!options.defaultIssues,
-      },
-      {
-        type: 'input',
-        name: 'issuesBody',
-        message: 'If issues are closed, the commit requires a body. Please enter a longer description of the commit itself:\n',
-        default: '-',
-        when(answers) {
-          return answers.isIssueAffected && !answers.body && !answers.breakingBody;
-        },
       },
       {
         type: 'input',
