@@ -24,3 +24,7 @@ npm i -g commitizen cz-adapter-ruby
 ```bash
 echo '{ "path": "cz-adapter-ruby" }' > ~/.czrc
 ```
+
+```bash
+git cz
+```
