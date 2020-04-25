@@ -5,9 +5,10 @@ const { filter } = require('./utils');
 function constructHeader(answers) {
   // parentheses are only needed when a scope is present
   const scope = answers.scope ? `(${answers.scope})` : '';
+  const breakingIndicator = answers.doIndicateBreaking ? '!' : '';
 
   // Hard limit this line in the validate
-  return `${answers.type}${scope}: ${answers.subject}`;
+  return `${answers.type}${scope}${breakingIndicator}: ${answers.subject}`;
 }
 
 function constructBody(answers, wrapOptions) {

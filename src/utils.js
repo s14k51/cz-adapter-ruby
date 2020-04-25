@@ -3,13 +3,11 @@ function filter(array) {
 }
 
 function headerLength(answers) {
-  return (
-    answers.type.length + 2 + (answers.scope ? answers.scope.length + 2 : 0)
-  );
+  return answers.type.length + 2 + (answers.scope ? answers.scope.length + 2 : 0);
 }
 
 function maxSummaryLength(options, answers) {
-  return options.maxHeaderWidth - headerLength(answers);
+  return options.maxHeaderWidth - headerLength(answers) - 1;
 }
 
 function filterSubject(subject) {
