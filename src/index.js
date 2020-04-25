@@ -99,19 +99,9 @@ const adapter = {
         },
       },
       {
-        type: 'confirm',
-        name: 'isIssueAffected',
-        message: 'Does this change affect any open issues?',
-        default: !!options.defaultIssues,
-      },
-      {
         type: 'input',
         name: 'issues',
-        message: 'Add issue references (e.g. "Fixes #123", "Closes #123", "Refs #123".):\n',
-        default: options.defaultIssues,
-        when(answers) {
-          return answers.isIssueAffected;
-        },
+        message: 'Add issue references if any (e.g. "Closes: #123", "Fixes: #123", "Refs: #123".): (press enter to skip)\n',
       },
     ])
       .then((answers) => constructCommitMessage(answers, options))

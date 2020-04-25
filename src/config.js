@@ -12,7 +12,6 @@ const options = {
   defaultScope: undefined,
   defaultSubject: undefined,
   defaultBody: undefined,
-  defaultIssues: undefined,
 };
 
 const length = longest(conventionalRubyTypes).length + 1;
