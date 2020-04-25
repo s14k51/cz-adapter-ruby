@@ -90,6 +90,12 @@ const adapter = {
         },
       },
       {
+        type: 'confirm',
+        name: 'doIndicateBreaking',
+        message: "In the header, do you want to add the '!' indicator to draw attention to breaking changes if any?",
+        default: false,
+      },
+      {
         type: 'input',
         name: 'issues',
         message: 'Add issue references if any (e.g. "Closes: #123", "Fixes: #123", "Refs: #123".): (press enter to skip)\n',
