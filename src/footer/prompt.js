@@ -50,11 +50,27 @@ module.exports = function prompt(cz, previousTrailerNumber = 0, previousTrailers
         return filterTrailerValue(trailerValue);
       },
     },
-    // {
-    //   type: 'confirm',
-    //   name: 'doIndicateBreaking',
-    //   message: 'In the header, do you want to draw attention to breaking changes if any?',
-    //   default: false,
-    // },
-  ]);
+    {
+      type: 'confirm',
+      name: 'moreTrailers',
+      message: 'Do you want to add more trailers?',
+      default: false,
+      when(answers) {
+        return answers.trailerKey && answers.trailerValue;
+      },
+    },
+  ])
+    .then(({ trailerKey, trailerValue, moreTrailers }) => {
+      const doesTrailerExist = trailerKey && trailerValue;
+
+      if (doesTrailerExist) {
+        trailers.push({ key: trailerKey, value: trailerValue });
+      }
+
+      if (doesTrailerExist && moreTrailers) {
+        return prompt(cz, trailerNumber, trailers);
+      }
+
+      return trailers;
+    });
 };
