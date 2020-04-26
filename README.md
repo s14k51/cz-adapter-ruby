@@ -14,7 +14,7 @@
 
 # cz-adapter-ruby
 
-Customized fork of [cz-conventional-changelog](https://www.npmjs.com/package/cz-conventional-changelog)
+This adapter is a customized fork of [cz-conventional-changelog](https://www.npmjs.com/package/cz-conventional-changelog). It strictly adheres to the [Conventional Commits Specification v1.0.0](https://www.conventionalcommits.org/en/v1.0.0/).
 
 # Usage
 
