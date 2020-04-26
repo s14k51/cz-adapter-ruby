@@ -21,8 +21,8 @@ const adapter = {
         answerChunks.push(body, breaking, doIndicateBreaking);
       })
       .then(() => footerPrompt(cz))
-      .then(({ trailerKey, trailerValue }) => {
-        answerChunks.push(trailerKey, trailerValue);
+      .then((trailers) => {
+        answerChunks.push(trailers);
       })
       .then(() => {
         const header = constructHeader(answerChunks);

@@ -1,13 +1,18 @@
-// See https://git-scm.com/docs/git-interpret-trailers
+/**
+ *  See:
+ *  https://git-scm.com/docs/git-interpret-trailers
+ *  https://github.com/conventional-commits/conventionalcommits.org/issues/179
+ */
 const supportedKeys = [
   'Closes',
   'Fixes',
   'Refs',
-  'See-also',
+  'See-Also',
   'Cc',
-  'Reviewed-by',
-  'Signed-off-by',
-  'Acked-by',
+  'Co-Authored-By',
+  'Reviewed-By',
+  'Signed-Off-By',
+  'Acked-By',
 ];
 
 const skipKeys = [
