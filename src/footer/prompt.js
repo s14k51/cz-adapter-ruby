@@ -6,14 +6,30 @@ const { filterTrailerValue } = require('./utils');
 
 module.exports = function prompt(cz, previousTrailerNumber = 0, previousTrailers = []) {
   const trailerNumber = previousTrailerNumber + 1;
+  const isFirstTrailer = trailerNumber === 1;
   const trailers = [...previousTrailers];
 
   return cz.prompt([
     {
+      type: 'confirm',
+      name: 'doAddFooter',
+      message: 'Do you want to add a footer?',
+      default: false,
+      when() {
+        return isFirstTrailer;
+      },
+    },
+    {
       type: 'list',
       name: 'trailerKey',
       message: 'Select the key for the trailer',
-      choices: [...supportedKeys, trailerNumber === 1 ? skipKeys[0] : skipKeys[1]],
+      choices: [...supportedKeys, isFirstTrailer ? skipKeys[0] : skipKeys[1]],
+      when(answers) {
+        if (isFirstTrailer) {
+          return answers.doAddFooter;
+        }
+        return true;
+      },
     },
     {
       type: 'input',
@@ -53,7 +69,7 @@ module.exports = function prompt(cz, previousTrailerNumber = 0, previousTrailers
     {
       type: 'confirm',
       name: 'moreTrailers',
-      message: 'Do you want to add more trailers?',
+      message: 'Do you want to add more trailers to the footer?',
       default: false,
       when(answers) {
         return answers.trailerKey && answers.trailerValue;
