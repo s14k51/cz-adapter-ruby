@@ -1,7 +1,7 @@
 {
   "name": "cz-adapter-ruby",
   "description": "Customized fork of cz-conventional-changelog",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "license": "MIT",
   "main": "src/index.js",
   "files": [
@@ -17,7 +17,8 @@
     "url": "https://github.com/s14k51/cz-adapter-ruby/issues"
   },
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "echo \"No tests\" && exit 0"
   },
   "dependencies": {
     "chalk": "^4.0.0",
