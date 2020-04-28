@@ -1,7 +1,7 @@
 const { supportedKeys } = require('./data');
 
 module.exports = function constructFooter(answers) {
-  const [, , , , , , trailers] = answers;
+  const [, , , , , trailers] = answers;
 
   if (trailers.length > 0) {
     const groupMap = trailers.reduce((trailerMap, trailer) => {
