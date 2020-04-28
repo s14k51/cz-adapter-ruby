@@ -9,7 +9,7 @@ module.exports = function prompt(cz) {
     {
       type: 'list',
       name: 'type',
-      message: "Select the type of change that you're committing:",
+      message: 'Select the type of the change that you are committing:',
       default: options.defaultType,
       choices: supportedTypes,
     },
@@ -27,7 +27,7 @@ module.exports = function prompt(cz) {
       name: 'subject',
       message(answers) {
         const maxLength = maxSummaryLength(options, answers);
-        return `Write a summary description of your changes in imperative mood (max ${maxLength} chars):\n`;
+        return `Write a summary description of the change in imperative mood (max ${maxLength} chars):\n`;
       },
       default: options.defaultSubject,
       validate(subject, answers) {
