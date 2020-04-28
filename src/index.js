@@ -17,8 +17,8 @@ const adapter = {
         answerChunks.push(type, scope, subject);
       })
       .then(() => bodyPrompt(cz))
-      .then(({ body, breaking, doIndicateBreaking }) => {
-        answerChunks.push(body, breaking, doIndicateBreaking);
+      .then(({ body, breaking }) => {
+        answerChunks.push(body, breaking);
       })
       .then(() => footerPrompt(cz))
       .then((trailers) => {

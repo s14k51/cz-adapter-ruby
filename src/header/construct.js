@@ -1,6 +1,6 @@
 module.exports = function constructHeader(answers) {
-  const [type, scope, subject, , , doIndicateBreaking] = answers;
+  const [type, scope, subject, , breaking] = answers;
   const optionalScope = scope ? `(${scope})` : '';
-  const optionalBreakingIndicator = doIndicateBreaking ? '!' : '';
+  const optionalBreakingIndicator = breaking ? '!' : '';
   return `${type}${optionalScope}${optionalBreakingIndicator}: ${subject}`;
 };

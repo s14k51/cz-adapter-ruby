@@ -17,8 +17,7 @@ function constructBody(answers) {
 
 function constructBreaking(answers) {
   const [, , , , breaking] = answers;
-  let optionalBreaking = breaking ? breaking.trim() : '';
-  optionalBreaking = optionalBreaking ? `BREAKING CHANGE: ${optionalBreaking.replace(/^BREAKING CHANGE: /, '')}` : '';
+  const optionalBreaking = breaking ? `BREAKING CHANGE: ${breaking}` : '';
   return optionalBreaking ? wrap(optionalBreaking, wrapOptions) : false;
 }
 
