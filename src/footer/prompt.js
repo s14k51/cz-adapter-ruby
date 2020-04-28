@@ -22,7 +22,7 @@ module.exports = function prompt(cz, previousTrailerNumber = 0, previousTrailers
     {
       type: 'list',
       name: 'trailerKey',
-      message: 'Select the key for the trailer',
+      message: 'Select the trailer key',
       choices: [...supportedKeys, isFirstTrailer ? skipKeys[0] : skipKeys[1]],
       when(answers) {
         if (isFirstTrailer) {

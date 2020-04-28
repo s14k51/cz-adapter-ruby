@@ -8,7 +8,7 @@ module.exports = function prompt(cz) {
     {
       type: 'input',
       name: 'body',
-      message: 'Provide a longer description of the changes: (press enter to skip)\n',
+      message: 'Provide a longer description of the change: (press enter to skip)\n',
       default: options.defaultBody,
       filter(body) {
         return filterBody(body);
