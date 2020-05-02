@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "8.3.5",
-    "commitlint-config-ruby": "2.2.0",
+    "commitlint-config-ruby": "2.3.0",
     "eslint": "6.8.0",
     "eslint-config-ruby": "1.7.2",
     "husky": "4.2.5",
