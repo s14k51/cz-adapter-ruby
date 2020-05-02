@@ -532,10 +532,10 @@ conventional-commits-parser@^3.0.0:
     through2 "^3.0.0"
     trim-off-newlines "^1.0.0"
 
-conventional-ruby-commit-types@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/conventional-ruby-commit-types/-/conventional-ruby-commit-types-1.1.0.tgz#f8233b3d9df6520ce8e444a600ff260c21b64e6c"
-  integrity sha512-QJxYZjUfwIbO83U5OnGLATIlMfyPSBbPAF3fwaA5v7oAGgY3EHp+oMgU62fIHLRVgJ9TnvrgW3sf/QEzoDqa0w==
+conventional-ruby-commit-types@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/conventional-ruby-commit-types/-/conventional-ruby-commit-types-2.0.0.tgz#c0b2820000e273381fb05194f2c3d9b8d80de739"
+  integrity sha512-TDHjictQL2IxVXe+9cuYJnNdCI6fQxZOfoyn28hSf9TUInEILbrK+J9CM95GXrxIHwCRAbFWV4FBbg8Z7trc7g==
   dependencies:
     conventional-commit-types "3.0.0"
 

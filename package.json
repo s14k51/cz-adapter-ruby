@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "chalk": "^4.0.0",
-    "conventional-ruby-commit-types": "^1.1.0",
+    "conventional-ruby-commit-types": "^2.0.0",
     "longest": "^2.0.1",
     "word-wrap": "^1.2.3"
   },
