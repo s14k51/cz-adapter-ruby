@@ -27,7 +27,7 @@
     "word-wrap": "^1.2.3"
   },
   "devDependencies": {
-    "@commitlint/cli": "8.3.5",
+    "@commitlint/cli": "9.1.2",
     "commitlint-config-ruby": "2.2.0",
     "eslint": "6.8.0",
     "eslint-config-ruby": "1.7.2",
