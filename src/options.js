@@ -1,8 +1,6 @@
-const { configureWidths } = require('conventional-ruby-commit-types');
-
-const widths = configureWidths();
 const options = {
-  ...widths,
+  maxHeaderWidth: 50,
+  maxLineWidth: 72,
   defaultType: 'feat',
   defaultScope: undefined,
   defaultSubject: undefined,
