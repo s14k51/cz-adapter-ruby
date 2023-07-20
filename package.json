@@ -24,7 +24,7 @@
     "chalk": "^4.1.0",
     "conventional-ruby-commit-types": "^3.0.0",
     "longest": "^2.0.1",
-    "word-wrap": "^1.2.3"
+    "word-wrap": "^1.2.4"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
